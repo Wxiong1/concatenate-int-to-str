@@ -1,8 +1,20 @@
+# Welcome message
 print("Welcome!")
+# User enters their name
 name = input("Hello! What is your name?")
-
-rand_num = int(input("Hi " + name + "! Please enter a random number between 1 - 100"))
+# Output message with user input name and asks user to pick a number
+rand_num = int(input("Hi " + name + "! Please enter a number between 1 - 100. "))
+# If the number entered is greater than 100
+# Output message too high
 if rand_num > 100:
     print(str(rand_num) + " is too high.")
-else:
-    print("You entered " + str(rand_num) + " is that correct?")
+else: 
+# If user enter number between 1 - 100, output message 
+
+    print("You entered " + str(rand_num) + " is that correct? " ) 
+# validating with user if the number enter is correct 
+is_Correct = input("Enter 'Y' or 'N'")
+if is_Correct == "Y" or is_Correct == "y":
+    print("Awesome! Have a nice day.")
+elif is_Correct == "N" or is_Correct == "n":
+    print("Awe, I'm sorry I got it wrong.")
