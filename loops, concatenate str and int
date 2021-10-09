@@ -1,0 +1,19 @@
+# Welcome message
+print("Welcome!")
+name = input("What is your name? ")
+print('Hello ' + name)
+
+#Create loop
+again = 'Y'
+while again == 'Y': # loop if user enter's 'Y' to try again
+    num = int(input("Please enter a number bewtwee 1-100. "))
+    if (num > 100):
+        print(str(num) + " is too high.")
+    elif (num <=100):
+        print("Is " + str(num) + " your number? ") # asking if the number entered is correct
+        correct = input("Enter 'Y or 'N' ")
+        if correct == 'Y' or correct == 'y': # if it's correct, shows "Yay" statement
+                print("Yay!")
+        elif correct == 'N' or correct == 'n': # if it's not correct, shows "Awe man!" statement
+            print("Awe man!")
+    again = input("Enter Again? 'Y' or 'N' ") # 'N' terminates program. 'Y' will loop progr
