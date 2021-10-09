@@ -1,0 +1,8 @@
+print("Welcome!")
+name = input("Hello! What is your name?")
+
+rand_num = int(input("Hi " + name + "! Please enter a random number between 1 - 100"))
+if rand_num > 100:
+    print(str(rand_num) + " is too high.")
+else:
+    print("You entered " + str(rand_num) + " is that correct?")
